@@ -53,6 +53,22 @@ export const UserSchema = {
     updatedAt: {
       type: 'timestamp',
       updateDate: true
-    }
+    },
+    firstName: {
+      type: 'varchar',
+      nullable: true
+    },
+    lastName: {
+      type: 'varchar',
+      nullable: true
+    },
+    accountType: {
+      type: 'varchar',
+      nullable: true
+    },
+    isDisabled: {
+      type: 'boolean',
+      default: false
+    },
   }
 }
